@@ -1,7 +1,4 @@
-# esports
- 
- 
- <h1 align="center">
+<h1 align="center">
     <img alt="Find your Duo" title="#Find your Duo" src="./Find_your_Duo.jpg" width="250px" />
 </h1>
 
