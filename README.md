@@ -1,10 +1,7 @@
 <h1 align="center">
-    <img alt="Find your Duo" title="#Find your Duo" src="./Find_your_Duo.jpg" width="250px" />
+    <img alt="NLW eSports" title="#NLW eSports" src="./nlw-esports-logo.svg" width="250px" />
 </h1>
 
-<h4 align="center">
-  🚀 NLW eSports
-</h4>
 <p align="center">
   <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/lucianocoelho-28/esports">
 
