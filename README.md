@@ -1,5 +1,5 @@
 <h1 align="center">
-    <img alt="NLW eSports" title="#NLW eSports" src="./nlw-esports-logo.svg" width="250px" />
+    <img alt="NLW eSports" title="#NLW eSports" src="./img/nlw-esports-logo.svg" width="250px" />
 </h1>
 
 <p align="center">
@@ -29,7 +29,7 @@
 <br>
 
 <p align="center">
-  <img alt="Frontend" src="./Find_your_Duo.jpg" width="100%">
+  <img alt="Frontend" src="./img/Find_your_Duo.jpg" width="100%">
 </p>
 
 ## :rocket: Tecnologias
