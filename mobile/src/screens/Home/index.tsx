@@ -30,7 +30,9 @@ export function Home() {
               data={item}
             />
           )}
-          horizontal 
+          showsHorizontalScrollIndicator={false}
+          horizontal
+          contentContainerStyle={styles.contentList}
         />
       </View>
   );
