@@ -25,11 +25,12 @@ export function Home() {
         <FlatList 
           data={GAMES}
           keyExtractor={item => item.id}
-          renderItem={() => (
-            <GameCard
-            data={GAMES[0]}
-          />
+          renderItem={({item}) => (
+            <GameCard 
+              data={item}
+            />
           )}
+          horizontal 
         />
       </View>
   );
