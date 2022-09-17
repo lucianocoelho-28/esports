@@ -1,4 +1,4 @@
-import { StyleSheet } from 'react-native';
+import { StyleSheet } from 'react-native'; //rnso para construir a estrutura automatica
 
 export const styles = StyleSheet.create({
   container: {

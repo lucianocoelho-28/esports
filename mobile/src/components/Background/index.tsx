@@ -1,4 +1,4 @@
-import { ImageBackground } from 'react-native';
+import { ImageBackground } from 'react-native'; //rnbc para construir a estrutura automatica
 
 import backgroundImg from '../../assets/background-galaxy.png';
 
