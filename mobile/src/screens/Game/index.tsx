@@ -46,6 +46,7 @@ export function Game() {
         <Image 
             source={{ uri: game.bannerUrl }}
             style={styles.cover}
+            resizeMode="cover"
         />
 
         <Heading 
