@@ -9,7 +9,6 @@ import './styles/main.css';
 import logoImg from './assets/logo-nlw-esports.svg';
 import { Input } from "./components/Form/Input";
 
-
 interface Game {
   id: string;
   title: string;
@@ -51,7 +50,7 @@ function App() {
           })}
       </div>
 
-      <Dialog.Root>
+      <Dialog.Root> 
         <CreateAdBanner />
 
         <Dialog.Portal>
