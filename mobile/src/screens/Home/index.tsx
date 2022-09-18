@@ -16,7 +16,7 @@ export function Home() {
 
   const navigation = useNavigation();
 
-  function handleOpenGame({ id, title, bannerUrl }: GameCardProps){
+  function handleOpenGame({ id, title, bannerUrl }: GameCardProps) {
     navigation.navigate('game', { id, title, bannerUrl });
   }
 
@@ -53,6 +53,6 @@ export function Home() {
           contentContainerStyle={styles.contentList}
         />
       </SafeAreaView>
-      </Background>
+    </Background>
   );
 }

@@ -20,5 +20,9 @@ export const styles = StyleSheet.create({
   right: {
     width: 20,
     right: 20,
+  },
+  cover: {
+    width: 311,
+    height: 160,
   }
 });
