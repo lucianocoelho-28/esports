@@ -1,12 +1,14 @@
-import { useState, useEffect } from 'react';
+import { useEffect, useState } from "react";
 import * as Dialog from '@radix-ui/react-dialog';
 import { CreateAdBanner } from "./components/CreateAdBanner";
-import { GameBanner } from './components/GameBanner';
+import { GameBanner } from "./components/GameBanner";
 
 import './styles/main.css';
 
 import logoImg from './assets/logo-nlw-esports.svg';
-import { CreateAdModal } from './components/CreateAdModal';
+import { CreateAdModal } from "./components/CreateAdModal";
+import axios from "axios";
+
 
 interface Game {
   id: string;
@@ -18,14 +20,12 @@ interface Game {
 }
 
 function App() {
-  const [games, setGames] = useState<Game[]>([])
+  const [games, setGames] = useState<Game[]>([]);
 
   useEffect(() => {
-    fetch('http://localhost:3333/games')
-      .then(response => response.json())
-      .then(data => {
-        setGames(data);
-      });
+    axios('http://localhost:3333/games').then(response => {
+      setGames(response.data);
+    });
   }, []);
 
   return (
@@ -38,18 +38,18 @@ function App() {
 
       <div className="grid grid-cols-6 gap-6 mt-16">
         {games.map(game => {
-            return (
-              <GameBanner
-                key={game.id}
-                title={game.title}
-                bannerUrl={game.bannerUrl}
-                adsCount={game._count.ads}
-              />
-            )
-          })}
+          return (
+            <GameBanner
+              key={game.id}
+              title={game.title}
+              bannerUrl={game.bannerUrl}
+              adsCount={game._count.ads}
+            />
+          )
+        })}
       </div>
 
-      <Dialog.Root> 
+      <Dialog.Root>
         <CreateAdBanner />
 
         <CreateAdModal />
